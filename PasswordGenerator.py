@@ -16,31 +16,6 @@ numL = int(input("How many letters do you want to generate? \n"))
 numD = int(input("How many digits do you want in the password? \n"))
 numS = int(input("How many symbols do you want in the password? \n"))
 
-'''
-# My Method
-
-pw = ""
-for i in range(0, (numL)):
-    pw += random.choice(letters)
-for i in range(0, (numD)):
-    pw += random.choice(numbers)
-for i in range(0, (numS)):
-    pw += random.choice(symbols)
-print(pw)
-
-#Easy Level Completed (Above)
-
-# Jumbled letters in the password (Below)
-
-fpw = list(pw)
-random.shuffle(fpw)
-passw = ''.join(fpw)  # converts list to string
-# print(type(passw))
-print(passw)
-
-'''
-
-# Method used in the course
 pw = []  # using List
 for i in range(0, (numL)):
     pw.append(random.choice(letters))
