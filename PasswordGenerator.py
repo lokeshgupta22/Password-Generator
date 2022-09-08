@@ -23,9 +23,9 @@ for i in range(0, (numD)):
     pw += random.choice(numbers)
 for i in range(0, (numS)):
     pw += random.choice(symbols)
-print(pw)
+#print(pw)
 random.shuffle(pw)
-print(pw)
+#print(pw)
 # print(f"{''.join(pw)}") #One line method for below code
 password = ""
 for i in pw:
